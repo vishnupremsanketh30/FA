@@ -1,0 +1,27 @@
+<mat-toolbar style="background-color: #262a38; opacity: 0.9; color: #ffffff;">
+    <div class="header">
+        <button class="sidemenu" mat-button (click)="opened= !opened"><mat-icon>menu</mat-icon></button>
+        <span>Frank Associates</span>
+    </div>
+    <div class="spacer"></div>
+    <div class="menu">
+        <a mat-button style="text-decoration: none;" routerLink="home">Home</a>
+        <a mat-button style="text-decoration: none;" routerLink="services">Services Offered</a>
+        <a mat-button style="text-decoration: none;">News and Articles</a>
+        <a mat-button style="text-decoration: none;" routerLink="contactus">Contact Us</a>
+    </div>
+</mat-toolbar>
+<mat-sidenav-container>
+    <mat-sidenav [(opened)]="opened" style="background-color: #262a38;">
+        <mat-list style="color: #ffffff;">
+            <mat-list-item><a mat-button routerLink="home" style="text-decoration: none; color: #ffffff;">Home</a></mat-list-item>
+            <mat-list-item><a mat-button routerLink="" style="text-decoration: none; color: #ffffff;">Services Offered</a></mat-list-item>
+            <mat-list-item><a mat-button routerLink="" style="text-decoration: none; color: #ffffff;"> Tax Updates</a></mat-list-item>
+            <mat-list-item><a mat-button routerLink="" style="text-decoration: none; color: #ffffff;">News and Articles</a></mat-list-item>
+            <mat-list-item><a mat-button routerLink="contactus" style="text-decoration: none; color: #ffffff;">Contact Us</a></mat-list-item>
+        </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet style="height: 100%;"></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
