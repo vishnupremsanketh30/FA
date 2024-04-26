@@ -1,18 +1,63 @@
-    <div class="container-fluid" style="margin-top: 5rem;">
-        <div class="row">
-            <div class="col-lg-6" style="text-align: center; margin-top: 5rem;">
-                <h2>Tax Consultancy experts: Navigating Complex Regulations </h2>
-                <p style="margin-top: 3rem;">Welcome to FRANK ASSOCIATES, the premier Accounting and Tax Consultancy firm offering comprehensive business and finance solutions all in one place.</p>
-                <a  href="#services" class="btn btn-primary" style="margin-top: 3rem;">View all Services</a>
-            </div>
-            <div class="col-lg-6" style="text-align: center;">
-                <img src="https://10web-site.ai/30/wp-content/uploads/sites/33/2023/08/aronpw-bC40m7skyFQ-unsplash-scaled_Ohv3f4SX.webp" />
+    <div class="container-fluid homeimage">
+        <div class="row" style="margin-left: auto; margin-right: auto; max-width: fit-content; align-items: center; height: 90vh; ">
+            <div class="circle">
+                <div>
+                    <p> Meet Your Tax Advisor for effective tax strategies and Compliances</p> <br>
+                    <p>Talk to us for Expert Tax Consultancy, Accounting, Business Registrations and Compliance services</p>
+                    <a mat-flat-button color="primary" style="text-decoration: none;" routerLink="/contactus" >Contact Us</a>
+                </div>
             </div>
         </div>
-        <div id="services">
+        <div class="row servicesoffered">
             <app-servicesprovided></app-servicesprovided>
         </div>
-        <div>
-            <app-contactus></app-contactus>
+        <div class="row chooseFA">
+            <div style="text-align: center; margin-top: 3rem;">
+                <h1>Why Choose Frank Associates?</h1>
+            </div>
+            
+            <div class="col-lg-6">
+                <mat-card>
+                    <img style="height: 20rem;"
+                      mat-card-image
+                      src="../../assets/Responsibility.jpg"
+                      alt="Photo of a Shiba Inu"
+                    />
+                  
+                    <mat-card-content style="text-align: center; margin-top: 2rem;" >
+                      <p>
+                        <strong>Responsive and Reliable</strong>
+                      </p>
+                      <p>We understand the importance of timely and reliable service. Our team is always responsive to your needs and strives to provide you with the best service possible.</p>
+                    </mat-card-content>
+                  </mat-card>
+            </div>
+            <div class="col-lg-6">
+                <mat-card>
+                    <img style="height: 20rem;"
+                      mat-card-image
+                      src="../../assets/Complaince.jpg"
+                      alt="Photo of a Shiba Inu"
+                    />
+                  
+                    <mat-card-content style="text-align: center; margin-top: 2rem;" >
+                      <p>
+                        <strong>All compliances under one Roof</strong>
+                      </p>
+                      <p>We work diligently to ensure that you comply with all the applicable business laws which will eventually help you to concentrate on your core business plans and work on some brilliant ideas. </p>
+                    </mat-card-content>
+                  </mat-card>
+            </div>
+
+        </div>
+        <div #target class="row" style=" text-align: center; background-color: #202d3b; height: 60vh; color: white; padding: 0px">
+            <h1 style="margin-top: 2rem;">Contact Us</h1>
+            <p>
+                There are no geographical boundaries anymore to work and get the work done<br><br>
+                Our Services can be availed from anywhere  
+            </p>
+            <p><span style="font-size: 1.5rem;">See us in Person? Then Visit "Frank Associates"</span> <br><br>
+            6-1-128, 1st Floor, A R D complex, Besides HDFC Bank, K.T. Road, Tirupati, Andhra Pradesh, India<br>
+            90105 36337 / 9059 000 893</p>
         </div>
     </div>
